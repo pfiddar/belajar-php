@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="assets/product-style.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <title>Tugas 10 | Product</title>
+    <title>Tugas 11 | Product</title>
 </head>
 <body class="sidebar-mini">
     <div class="wrapper">
@@ -21,7 +21,7 @@
                     </a>
                 </li>
                 <li class="nav-item d-tone d-sm-inline-block">
-                    <a href="dashboard.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-tone d-sm-inline-block">
                     <a href="#" class="nav-link">About</a>
@@ -53,16 +53,16 @@
         </nav>
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- logo -->
-            <a class="brand-link" href="dashboard.html">
+            <a class="brand-link" href="#">
                 <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Tugas 10</span>
+                <span class="brand-text font-weight-light">Tugas 11</span>
             </a>
             <!-- sidebar -->
             <div class="sidebar">
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
-                            <a href="newproduct.html" class="nav-link active">
+                            <a href="newproduct.php" class="nav-link active">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>Product List
                                     <span class="right badge badge-danger">New</span>
@@ -70,9 +70,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">
+                            <a href="login.php" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
-                                <p>Index Page</p>
+                                <p>Login Page</p>
                             </a>
                         </li>
                     </ul>
@@ -90,10 +90,10 @@
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item">
-                                    <a href="dashboard.html">Home</a>
+                                    <a href="#">Home</a>
                                 </li>
                                 <li class="breadcrumb-item active">
-                                    <a href="newproduct.html">Product List</a>
+                                    <a href="newproduct.php">Product List</a>
                                 </li>
                             </ol>
                         </div>
