@@ -12,12 +12,12 @@
 <body class="login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="login-layout.html"><b>Log In</b></a>
+            <a href="login.php"><b>Log In</b></a>
         </div>
         <div class="card">
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Sign in to start the session</p>
-                <form action="dashboard.html" method="post">
+                <form action="newproduct.php" method="post">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" id="email" placeholder="Email/Username">
                         <div class="input-group-append">
