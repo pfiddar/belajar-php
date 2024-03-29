@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
-    <title>Tugas 10 | Log In</title>
+    <title>Tugas 11 | Log In</title>
 </head>
 <body class="login-page">
     <div class="login-box">
