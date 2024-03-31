@@ -3,6 +3,7 @@
     $product = [[
         "id" => 1,
         "nama" => "Chessecake",
+        "img" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqi4u0x9sYoyI53hxrTB-q5xR7amd8UrWj3Q&usqp=CAU",
         "harga" => "Rp. 20.000",
         "deskripsi" => "Lorem ipsum dolor sit amet consectetur adipisicing"
     ],
@@ -48,20 +49,21 @@
         "harga" => "Rp. 15.000",
         "deskripsi" => "Lorem ipsum dolor sit amet consectetur adipisicing"
     ],
-];
+    ];
     
 ?>
+    
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="assets/product-style.css">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <title>Tugas 11 | Product</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+        <link rel="stylesheet" href="assets/product-style.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <title>Tugas 11 | Product</title>
 </head>
 <body class="sidebar-mini">
     <div class="wrapper">
@@ -157,7 +159,30 @@
             <!-- main content -->
             <div class="content">
                 <div class="row"  id="content">
+                    <?php foreach($product as $p) : ?>
                     
+                    <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class=" card-img-top figure-img img-fluid rounded" src="<?php echo $p['img']; ?>" alt="gambar">
+                        </div>
+                        <div class="card-footer">
+                            <h3 class="card-title"><b><?php echo $p['nama']; ?></b></h3><br>
+                            <p><?php echo $p['deskripsi']; ?></p>
+                            <div class="row align-items-center">
+                                <div class="col-sm-8">
+                                    <h4 class="card-title"><?php echo $p['harga']; ?></h4>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-primary btn-block">
+                                    <i class="ion ion-ios-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
@@ -167,7 +192,7 @@
     <script src="assets/plugins/jquery/jquery.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/dist/js/adminlte.min.js"></script>
-    <script src="assets/api-product.js"></script>
 
+                                    
 </body>
 </html>
